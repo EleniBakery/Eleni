@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eleni Pourpourides · Pastry Chef in Nicosia</title>
+  <meta name="description" content="Luxury French mousse cakes, bento cakes, honey cake and custom desserts, handmade to order in Nicosia, Cyprus by pastry chef Eleni Pourpourides." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <a href="#top" class="brand" aria-label="Eleni Pourpourides, home">
+      <span class="monogram">E<span>P</span></span>
+      <span class="brand-text">Eleni Pourpourides<small>Pastry chef</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#order">How to order</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small btn-dark nav-cta" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">Order</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="signature-bg" aria-hidden="true">Eleni</div>
+      <div class="hero-copy reveal">
+        <p class="script">Luxury pastry in Nicosia</p>
+        <h1>French mousse cakes <span class="h-soft">&amp; custom</span> desserts</h1>
+        <p class="lead">Velvety mousse cakes, honey cake and celebration cakes, each one handmade to order by Ukrainian pastry chef Eleni Pourpourides.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">Order on WhatsApp <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="#menu">See the menu</a>
+        </div>
+        <ul class="hero-stats">
+          <li class="stat stat-pink"><b>100%</b><span>handmade<br>to order</span></li>
+          <li class="stat stat-pistachio"><b>FR</b><span>French mousse<br>technique</span></li>
+          <li class="stat stat-lilac"><b>🇺🇦</b><span>Ukrainian<br>recipes</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="blob blob-1" aria-hidden="true"></div>
+        <div class="blob blob-2" aria-hidden="true"></div>
+        <figure class="photo hero-portrait" data-label="images/eleni.jpg">
+          <img src="images/eleni.jpg" alt="Pastry chef Eleni Pourpourides with one of her celebration cakes" fetchpriority="high" />
+        </figure>
+        <figure class="photo hero-float hero-float-1" data-label="images/crown-cake.jpg">
+          <img src="images/crown-cake.jpg" alt="Pink velour mousse cake with a crown" />
+        </figure>
+        <figure class="photo hero-float hero-float-2" data-label="images/vintage-cake.jpg">
+          <img src="images/vintage-cake.jpg" alt="Vintage piped celebration cake" />
+        </figure>
+        <div class="badge-spin" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#circ">MADE WITH LOVE · MADE TO ORDER · </textPath></text></svg>
+          <span>EP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Bento mousse</span><i>✦</i><span>Honey cake</span><i>✦</i><span>Cheesecake</span><i>✦</i><span>3D cakes</span><i>✦</i><span>Cake pops</span><i>✦</i><span>Candy bars</span><i>✦</i><span>“Nuts” biscuits</span><i>✦</i><span>Wedding cakes</span><i>✦</i>
+        <span>Bento mousse</span><i>✦</i><span>Honey cake</span><i>✦</i><span>Cheesecake</span><i>✦</i><span>3D cakes</span><i>✦</i><span>Cake pops</span><i>✦</i><span>Candy bars</span><i>✦</i><span>“Nuts” biscuits</span><i>✦</i><span>Wedding cakes</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ MENU ============ -->
+    <section class="section" id="menu">
+      <div class="section-head reveal">
+        <p class="script">Sweet things</p>
+        <h2>The menu</h2>
+        <p class="sub">Every dessert is made fresh for your date. Flavours, colours and decoration can be tailored to you.</p>
+      </div>
+
+      <div class="filters reveal" role="tablist">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="mousse">Mousse cakes</button>
+        <button class="chip" data-filter="celebration">Celebration cakes</button>
+        <button class="chip" data-filter="treats">Treats &amp; gifts</button>
+      </div>
+
+      <div class="grid products">
+        <!-- To change a product: edit the text below. Prices: replace "on request" with e.g. "from €35". -->
+        <article class="card product reveal" data-cat="mousse">
+          <figure class="photo tint-pink" data-label="images/bento-mousse.jpg"><img src="images/bento-mousse.jpg" alt="Bento mousse cake" /></figure>
+          <div class="card-body">
+            <span class="tag">Bestseller</span>
+            <h3>Bento mousse cake</h3>
+            <p>A small mousse cake for two to four people, with a velvety finish and a filling of your choice.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order a Bento mousse cake 🎂" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="mousse">
+          <figure class="photo tint-butter" data-label="images/mousse-cake.jpg"><img src="images/mousse-cake.jpg" alt="French entremet mousse cake" /></figure>
+          <div class="card-body">
+            <span class="tag">Signature</span>
+            <h3>French mousse cake</h3>
+            <p>An elegant entremet with layers of mousse, crémeux, insert and crunch, finished with velour or a mirror glaze.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order a French mousse cake 🎂" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="celebration">
+          <figure class="photo tint-butter" data-label="images/honey-cake.jpg"><img src="images/honey-cake.jpg" alt="Honey cake" /></figure>
+          <div class="card-body">
+            <span class="tag">Classic</span>
+            <h3>Honey cake</h3>
+            <p>Thin honey sponges layered with a delicate cream: the Ukrainian classic, made the traditional way.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order a Honey cake 🍯" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="celebration">
+          <figure class="photo tint-berry" data-label="images/cheesecake.jpg"><img src="images/cheesecake.jpg" alt="Berry cheesecake" /></figure>
+          <div class="card-body">
+            <h3>Cheesecake</h3>
+            <p>A creamy baked cheesecake on a buttery base, topped with seasonal berries.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order a Cheesecake 🍓" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="celebration">
+          <figure class="photo tint-pistachio" data-label="images/vintage-cake.jpg"><img src="images/vintage-cake.jpg" alt="Vintage piped birthday cake" /></figure>
+          <div class="card-body">
+            <span class="tag">Trending</span>
+            <h3>Vintage birthday cake</h3>
+            <p>Retro piping, bows and ruffles in the colours of your choice, perfect for birthdays.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order a Vintage birthday cake 🎉" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="celebration">
+          <figure class="photo tint-lilac" data-label="images/3d-cake.jpg"><img src="images/3d-cake.jpg" alt="3D sculpted cake" /></figure>
+          <div class="card-body">
+            <h3>3D &amp; character cakes</h3>
+            <p>Sculpted cakes and figurines for kids' parties and themed celebrations.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to ask about a 3D cake ✨" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="treats">
+          <figure class="photo tint-pink" data-label="images/cake-pops.jpg"><img src="images/cake-pops.jpg" alt="Cake pops collection" /></figure>
+          <div class="card-body">
+            <span class="tag">New</span>
+            <h3>Cake pops collection</h3>
+            <p>Snickers, Caramel, Coffee Caramel and Vanilla Strawberry. Great for parties and gift boxes.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order Cake pops 🍭" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="treats">
+          <figure class="photo tint-sky" data-label="images/nuts.jpg"><img src="images/nuts.jpg" alt="Nuts biscuits in pastel colours" /></figure>
+          <div class="card-body">
+            <h3>“Nuts” biscuits</h3>
+            <p>Nostalgic walnut-shaped biscuits with a caramel filling, made in pastel colours and boxed as gifts.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to order “Nuts” biscuits 🌰" href="#">Order →</a></div>
+          </div>
+        </article>
+
+        <article class="card product reveal" data-cat="treats">
+          <figure class="photo tint-lilac" data-label="images/candy-bar.jpg"><img src="images/candy-bar.jpg" alt="Dessert candy bar" /></figure>
+          <div class="card-body">
+            <h3>Candy bar</h3>
+            <p>A coordinated dessert table of mini cakes, cake pops and treats styled for your event.</p>
+            <div class="card-foot"><span class="price">Price on request</span><a class="link-wa" data-wa="Hi Eleni! I'd like to ask about a Candy bar for my event 🎀" href="#">Order →</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="about-inner">
+        <!-- Tip: replace images/about.jpg with a photo of Eleni at work -->
+        <figure class="photo about-photo reveal" data-label="images/about.jpg">
+          <img src="images/about.jpg" alt="Vintage piped cake by Eleni Pourpourides" />
+        </figure>
+        <div class="about-copy reveal">
+          <p class="script">Meet the chef</p>
+          <h2>Hi, I'm Eleni</h2>
+          <p>I'm a Ukrainian pastry chef living in Nicosia. I fell in love with French patisserie: its textures, its balance and its attention to every detail. Now I bring that to Cyprus, together with the cakes I grew up with.</p>
+          <p>Every order is made by me, from start to finish, in small batches. I use real butter, fine chocolate and fresh fruit, and no shortcuts. I'd love to make your celebration a little sweeter.</p>
+          <ul class="values">
+            <li><span class="dot dot-pink"></span>Premium ingredients</li>
+            <li><span class="dot dot-pistachio"></span>Custom designs</li>
+            <li><span class="dot dot-butter"></span>Baked fresh for your date</li>
+          </ul>
+          <p class="signature">Eleni Pourpourides</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OCCASIONS ============ -->
+    <section class="section" id="occasions">
+      <div class="section-head reveal">
+        <p class="script">For every celebration</p>
+        <h2>Occasions</h2>
+      </div>
+      <div class="grid occasions">
+        <article class="occ occ-pink reveal">
+          <span class="occ-num">/01</span>
+          <h3>Weddings</h3>
+          <p>Tiered wedding cakes and dessert tables, designed to match your theme and colour palette.</p>
+        </article>
+        <article class="occ occ-butter reveal">
+          <span class="occ-num">/02</span>
+          <h3>Birthdays</h3>
+          <p>From bento cakes for two to show-stopping character cakes for little ones.</p>
+        </article>
+        <article class="occ occ-pistachio reveal">
+          <span class="occ-num">/03</span>
+          <h3>Corporate gifts</h3>
+          <p>Branded treat boxes, cake pops and biscuits for clients and teams.</p>
+        </article>
+        <article class="occ occ-lilac reveal">
+          <span class="occ-num">/04</span>
+          <h3>Christmas &amp; Easter</h3>
+          <p>Limited seasonal collections. Follow along on Instagram so you don't miss them.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO ORDER ============ -->
+    <section class="section steps-section" id="order">
+      <div class="section-head reveal">
+        <p class="script">Simple &amp; personal</p>
+        <h2>How to order</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><b>01</b><h3>Choose</h3><p>Pick a dessert from the menu, or send me your idea or an inspiration photo.</p></li>
+        <li class="reveal"><b>02</b><h3>Message</h3><p>Write to me on WhatsApp or Instagram with your date, number of guests and wishes.</p></li>
+        <li class="reveal"><b>03</b><h3>Confirm</h3><p>We agree on the design and price, and a deposit secures your date.</p></li>
+        <li class="reveal"><b>04</b><h3>Enjoy</h3><p>Pick up in Nicosia or choose delivery. Then it's time for cake!</p></li>
+      </ol>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery-section">
+      <div class="section-head reveal">
+        <p class="script">Fresh from the kitchen</p>
+        <h2>Recent creations</h2>
+      </div>
+      <div class="gallery">
+        <figure class="photo g1 tint-pink reveal" data-label="images/gallery-1.jpg"><img src="images/gallery-1.jpg" alt="Recent creation" /></figure>
+        <figure class="photo g2 tint-butter reveal" data-label="images/gallery-2.jpg"><img src="images/gallery-2.jpg" alt="Recent creation" /></figure>
+        <figure class="photo g3 tint-berry reveal" data-label="images/gallery-3.jpg"><img src="images/gallery-3.jpg" alt="Recent creation" /></figure>
+        <figure class="photo g4 tint-sky reveal" data-label="images/gallery-4.jpg"><img src="images/gallery-4.jpg" alt="Recent creation" /></figure>
+        <figure class="photo g5 tint-pistachio reveal" data-label="images/gallery-5.jpg"><img src="images/gallery-5.jpg" alt="Recent creation" /></figure>
+      </div>
+      <div class="center reveal">
+        <a class="btn btn-ghost" href="https://www.instagram.com/epourpourides.bakery/" target="_blank" rel="noopener">More on Instagram @epourpourides.bakery</a>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <!-- PLACEHOLDER REVIEWS: replace these with real messages from her "Feedback" highlight. -->
+    <section class="section reviews" id="reviews">
+      <div class="section-head reveal">
+        <p class="script">Kind words</p>
+        <h2>Reviews</h2>
+      </div>
+      <div class="chat">
+        <div class="bubble reveal"><span class="who">Client name</span><p>Placeholder review: the bento cake was beautiful and tasted even better. Everyone asked where it was from! 💕</p><time>12:04</time></div>
+        <div class="bubble reveal"><span class="who">Client name</span><p>Placeholder review: the best honey cake I've had since leaving home. Thank you, Eleni! 🍯</p><time>18:21</time></div>
+        <div class="bubble reveal"><span class="who">Client name</span><p>Placeholder review: she made exactly the cake I imagined for my daughter's birthday. Highly recommend! 🎀</p><time>09:47</time></div>
+        <div class="bubble reveal"><span class="who">Client name</span><p>Placeholder review: our corporate gift boxes were a huge hit with clients. Ordering again for Christmas ✨</p><time>15:30</time></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq-section" id="faq">
+      <div class="section-head reveal">
+        <p class="script">Good to know</p>
+        <h2>Questions</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary><span>/01</span>How far in advance should I order?</summary><p>Ideally 5–7 days ahead for most cakes, and 2–4 weeks for weddings and large events. Last-minute? Message me and I'll check what's possible.</p></details>
+        <details class="reveal"><summary><span>/02</span>Do you deliver?</summary><p>Pick-up is in Nicosia. Delivery within Nicosia can be arranged for an extra fee. Just ask when you order.</p></details>
+        <details class="reveal"><summary><span>/03</span>Can you make a custom design?</summary><p>Of course! Send me your theme, colours or an inspiration photo, and I'll suggest a design and flavours.</p></details>
+        <details class="reveal"><summary><span>/04</span>Do you cater for allergies?</summary><p>Please tell me about any allergies when you order. Note that all desserts are made in a kitchen that handles nuts, gluten, dairy and eggs.</p></details>
+        <details class="reveal"><summary><span>/05</span>How do I pay?</summary><p>A deposit confirms your order, and the rest is paid on pick-up or delivery. I'll share the details when we confirm.</p></details>
+        <details class="reveal"><summary><span>/06</span>How should I store my cake?</summary><p>Keep mousse cakes refrigerated and take them out about 20–30 minutes before serving for the best texture.</p></details>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta reveal">
+      <div class="signature-bg small" aria-hidden="true">Pourpourides</div>
+      <p class="script">Let's create something sweet</p>
+      <h2>Ready to order<br>your cake?</h2>
+      <div class="hero-actions center">
+        <a class="btn btn-primary" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">Message on WhatsApp <span class="arrow">→</span></a>
+        <a class="btn btn-ghost light" href="https://www.instagram.com/epourpourides.bakery/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="monogram">E<span>P</span></span>
+      <p>Luxury mousse cakes &amp; custom desserts<br>handmade in Nicosia, Cyprus</p>
+    </div>
+    <div class="footer-links">
+      <a data-wa="Hi Eleni!" href="#">WhatsApp</a>
+      <a href="https://www.instagram.com/epourpourides.bakery/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/" id="facebookLink" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p class="copy">© <span id="year"></span> Eleni Pourpourides · Pastry chef</p>
+  </footer>
+
+  <!-- Floating order pill -->
+  <a class="float-cta" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">
+    <span>Order your cake on WhatsApp</span><span class="arrow">→</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
