@@ -422,3 +422,19 @@ button { font: inherit; cursor: pointer; }
   .float-cta { left: 12px; right: 12px; transform: translateY(140%); justify-content: center; padding: 16px 20px; }
   .float-cta.show { transform: translateY(0); }
 }
+
+/* ---------- Review invite ---------- */
+.chat:empty { display: none; }
+.chat:not(:empty) + .review-invite { margin-top: 48px; }
+.review-invite {
+  position: relative; overflow: hidden;
+  max-width: 760px; margin: 0 auto; text-align: center;
+  background: var(--paper); border-radius: var(--radius);
+  padding: clamp(32px, 5vw, 52px) clamp(20px, 5vw, 48px);
+  box-shadow: var(--shadow-soft);
+}
+.review-invite::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 6px; background: linear-gradient(90deg, var(--pink), var(--butter), var(--pistachio), var(--sky), var(--lilac)); }
+.review-stars { color: var(--gold); font-size: 26px; letter-spacing: .2em; margin-bottom: 12px; }
+.review-invite h3 { font-size: clamp(22px, 3vw, 30px); font-weight: 800; margin-bottom: 12px; }
+.review-invite p { color: var(--muted); max-width: 520px; margin: 0 auto 28px; }
+@media (max-width: 700px) { .review-invite .btn { flex: 1 1 100%; } }
