@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-signature" aria-hidden="true"><span>Eleni Pourpourides</span></div>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="top">
@@ -28,6 +29,7 @@
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#menu">Menu</a>
+      <a href="#birthdays">Birthdays</a>
       <a href="#about">About</a>
       <a href="#occasions">Occasions</a>
       <a href="#order">How to order</a>
@@ -41,7 +43,6 @@
   <main>
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="signature-bg" aria-hidden="true">Eleni</div>
       <div class="hero-copy reveal">
         <p class="eyebrow">Handmade pâtisserie · Nicosia</p>
         <h1><span class="h1-a"><span class="h1-fr">French</span> Mousse Cakes</span><span class="h1-b"><span class="amp">&amp;</span> Custom Desserts</span></h1>
@@ -103,7 +104,7 @@
       <div class="grid products">
         <!-- To change a product: edit the text below. Prices: replace "on request" with e.g. "from €35". -->
         <article class="card product reveal" data-cat="mousse">
-          <figure class="photo fit tint-pink" data-label="bento-mousse.jpg"><img loading="lazy" decoding="async" src="bento-mousse.jpg" alt="Bento mousse cake" /></figure>
+          <figure class="photo fit tint-pink" data-label="bento-mousse.jpg"><img loading="lazy" decoding="async" src="bento-mousse.jpg" alt="Pink velour bento mousse cake with a crown" /></figure>
           <div class="card-body">
             <span class="tag">Bestseller</span>
             <h3>Bento mousse cake</h3>
@@ -152,7 +153,7 @@
         </article>
 
         <article class="card product reveal" data-cat="celebration">
-          <figure class="photo fit tint-lilac" data-label="3d-cake.jpg"><img loading="lazy" decoding="async" src="3d-cake.jpg" alt="3D sculpted cake" /></figure>
+          <figure class="photo fit tint-lilac" data-label="3d-cake.jpg"><img loading="lazy" decoding="async" src="3d-cake.jpg" alt="Sculpted teddy bear cake" /></figure>
           <div class="card-body">
             <h3>3D &amp; character cakes</h3>
             <p>Sculpted cakes and figurines for kids' parties and themed celebrations.</p>
@@ -190,12 +191,50 @@
       </div>
     </section>
 
+
+    <!-- ============ BIRTHDAY CAKES ============ -->
+    <section class="section birthday" id="birthdays">
+      <div class="bday-inner">
+        <div class="bday-copy reveal">
+          <p class="eyebrow">Celebrations</p>
+          <h2>Birthday Cakes <em>to Remember</em></h2>
+          <p>From a little princess's first party to a milestone celebration, every birthday cake is designed around the person it's for: their favourite colours, flavours and story.</p>
+          <ul class="bday-list">
+            <li><span>I</span>Vintage piped cakes with bows &amp; ruffles</li>
+            <li><span>II</span>Princess, ballerina &amp; character cakes</li>
+            <li><span>III</span>Bento mousse cakes for two</li>
+            <li><span>IV</span>Matching dessert tables &amp; candy bars</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-wa="Hi Eleni! I'd like to order a birthday cake 🎂&#10;&#10;Date: &#10;Number of guests: &#10;Theme / colours: " href="#">Plan a birthday cake <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="bday-grid">
+          <figure class="photo fit b1 reveal"><img loading="lazy" decoding="async" src="crown-cake.jpg" alt="Pink velour princess cake with a jewelled crown" /></figure>
+          <figure class="photo fit b2 reveal"><img loading="lazy" decoding="async" src="bday-aurora.jpg" alt="Pink princess birthday cake with flowers and butterflies" /></figure>
+          <figure class="photo fit b3 reveal"><img loading="lazy" decoding="async" src="bday-unicorn.jpg" alt="Marshmallow unicorn sculpted birthday cake" /></figure>
+          <figure class="photo fit b4 reveal"><img loading="lazy" decoding="async" src="bday-leopard.jpg" alt="Two-tier leopard birthday cake with a gold crown" /></figure>
+        </div>
+      </div>
+      <div class="bday-wall">
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-minnie.jpg" alt="Minnie Mouse fairy birthday cake" /><figcaption>Minnie fairy</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-mermaid.jpg" alt="Little mermaid under-the-sea birthday cake" /><figcaption>Under the sea</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-bluey.jpg" alt="Bluey birthday cake with daisies" /><figcaption>Bluey &amp; daisies</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-football.jpg" alt="Football pitch birthday cake" /><figcaption>Football match</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-number.jpg" alt="Number 5 cream tart with berries" /><figcaption>Number cake</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-ballerina.jpg" alt="Ballerina birthday cake set" /><figcaption>Little ballerina</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-bitcoin.jpg" alt="Bitcoin themed birthday cake" /><figcaption>For the investor</figcaption></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="bday-teddy.jpg" alt="Sculpted teddy bear cake with a pink bow" /><figcaption>Teddy bear</figcaption></figure>
+      </div>
+      <p class="bday-note reveal">Every design is made to order. Send me your theme and I'll create something just for you.</p>
+    </section>
+
     <!-- ============ ABOUT ============ -->
     <section class="section about" id="about">
       <div class="about-inner">
         <!-- Tip: replace about.jpg with a photo of Eleni at work -->
         <figure class="photo fit about-photo reveal" data-label="about.jpg">
-          <img loading="lazy" decoding="async" src="about.jpg" alt="Vintage piped cake by Eleni Pourpourides" />
+          <img loading="lazy" decoding="async" src="about.jpg" alt="Snowflake cake cut to show its layers" />
         </figure>
         <div class="about-copy reveal">
           <p class="eyebrow">Meet the chef</p>
@@ -263,11 +302,15 @@
         <h2>Recent creations</h2>
       </div>
       <div class="gallery">
-        <figure class="photo fit g1 tint-pink reveal" data-label="gallery-1.jpg"><img loading="lazy" decoding="async" src="gallery-1.jpg" alt="Recent creation" /></figure>
-        <figure class="photo fit g2 tint-butter reveal" data-label="gallery-2.jpg"><img loading="lazy" decoding="async" src="gallery-2.jpg" alt="Recent creation" /></figure>
-        <figure class="photo fit g3 tint-berry reveal" data-label="gallery-3.jpg"><img loading="lazy" decoding="async" src="gallery-3.jpg" alt="Recent creation" /></figure>
-        <figure class="photo fit g4 tint-sky reveal" data-label="gallery-4.jpg"><img loading="lazy" decoding="async" src="gallery-4.jpg" alt="Recent creation" /></figure>
-        <figure class="photo fit g5 tint-pistachio reveal" data-label="gallery-5.jpg"><img loading="lazy" decoding="async" src="gallery-5.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-1.jpg" alt="Pink velour Santa mousse desserts" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-2.jpg" alt="Blue snowflake winter cake" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-3.jpg" alt="Golden walnut-shaped Nuts biscuits" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-4.jpg" alt="Gingerbread house mousse cake" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-5.jpg" alt="Yellow swirl mousse cake from above" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="gallery-6.jpg" alt="Lemon cake pops" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="art-cow.jpg" alt="Sculpted highland cow cake" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="art-bust.jpg" alt="Edible sculpted classical bust" /></figure>
+        <figure class="photo fit reveal"><img loading="lazy" decoding="async" src="art-sculpture.jpg" alt="White sculpted cake photographed by the sea" /></figure>
       </div>
       <div class="center reveal">
         <a class="btn btn-ghost" href="https://www.instagram.com/epourpourides.bakery/" target="_blank" rel="noopener">More on Instagram @epourpourides.bakery</a>
@@ -317,7 +360,6 @@
 
     <!-- ============ CTA ============ -->
     <section class="cta reveal">
-      <div class="signature-bg small" aria-hidden="true">Pourpourides</div>
       <p class="eyebrow">Something sweet awaits</p>
       <h2>Ready to order<br>your cake?</h2>
       <div class="hero-actions center">
