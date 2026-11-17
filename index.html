@@ -7,7 +7,15 @@
   <meta name="description" content="Luxury French mousse cakes, bento cakes, honey cake and custom desserts, handmade to order in Nicosia, Cyprus by pastry chef Eleni Pourpourides." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#faf7f2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23faf7f2' stroke='%23a8834f' stroke-width='2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%23a8834f'%3EEP%3C/text%3E%3C/svg%3E" />
+  <!-- Preview card when the link is shared on WhatsApp, Facebook, Instagram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Eleni Pourpourides · Pastry Chef in Nicosia" />
+  <meta property="og:description" content="French mousse cakes & custom desserts, handmade to order in Nicosia, Cyprus." />
+  <meta property="og:image" content="https://elenibakery.github.io/Eleni/eleni.jpg" />
+  <meta property="og:url" content="https://elenibakery.github.io/Eleni/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,23 +43,24 @@
     <section class="hero">
       <div class="signature-bg" aria-hidden="true">Eleni</div>
       <div class="hero-copy reveal">
-        <p class="script">Luxury pastry in Nicosia</p>
-        <h1>French mousse cakes <span class="h-soft">&amp; custom</span> desserts</h1>
+        <p class="eyebrow">Handmade pâtisserie · Nicosia</p>
+        <h1><span class="h1-a"><span class="h1-fr">French</span> Mousse Cakes</span><span class="h1-b"><span class="amp">&amp;</span> Custom Desserts</span></h1>
         <p class="lead">Velvety mousse cakes, honey cake and celebration cakes, each one handmade to order by Ukrainian pastry chef Eleni Pourpourides.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">Order on WhatsApp <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#menu">See the menu</a>
         </div>
         <ul class="hero-stats">
-          <li class="stat stat-pink"><b>100%</b><span>handmade<br>to order</span></li>
-          <li class="stat stat-pistachio"><b>FR</b><span>French mousse<br>technique</span></li>
-          <li class="stat stat-lilac"><b>🇺🇦</b><span>Ukrainian<br>recipes</span></li>
+          <li class="stat"><b>Handmade</b><span>to order, in small batches</span></li>
+          <li class="stat"><b>French</b><span>mousse technique</span></li>
+          <li class="stat"><b>Ukrainian</b><span>family recipes</span></li>
         </ul>
       </div>
 
       <div class="hero-visual reveal">
         <div class="blob blob-1" aria-hidden="true"></div>
         <div class="blob blob-2" aria-hidden="true"></div>
+        <div class="hero-frame" aria-hidden="true"></div>
         <figure class="photo hero-portrait" data-label="eleni.jpg">
           <img src="eleni.jpg" alt="Pastry chef Eleni Pourpourides with one of her celebration cakes" fetchpriority="high" />
         </figure>
@@ -79,22 +88,22 @@
     <!-- ============ MENU ============ -->
     <section class="section" id="menu">
       <div class="section-head reveal">
-        <p class="script">Sweet things</p>
+        <p class="eyebrow">Sweet things</p>
         <h2>The menu</h2>
         <p class="sub">Every dessert is made fresh for your date. Flavours, colours and decoration can be tailored to you.</p>
       </div>
 
-      <div class="filters reveal" role="tablist">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="mousse">Mousse cakes</button>
-        <button class="chip" data-filter="celebration">Celebration cakes</button>
-        <button class="chip" data-filter="treats">Treats &amp; gifts</button>
+      <div class="filters reveal">
+        <button class="chip active" aria-pressed="true" data-filter="all">All</button>
+        <button class="chip" aria-pressed="false" data-filter="mousse">Mousse cakes</button>
+        <button class="chip" aria-pressed="false" data-filter="celebration">Celebration cakes</button>
+        <button class="chip" aria-pressed="false" data-filter="treats">Treats &amp; gifts</button>
       </div>
 
       <div class="grid products">
         <!-- To change a product: edit the text below. Prices: replace "on request" with e.g. "from €35". -->
         <article class="card product reveal" data-cat="mousse">
-          <figure class="photo tint-pink" data-label="bento-mousse.jpg"><img src="bento-mousse.jpg" alt="Bento mousse cake" /></figure>
+          <figure class="photo fit tint-pink" data-label="bento-mousse.jpg"><img loading="lazy" decoding="async" src="bento-mousse.jpg" alt="Bento mousse cake" /></figure>
           <div class="card-body">
             <span class="tag">Bestseller</span>
             <h3>Bento mousse cake</h3>
@@ -104,7 +113,7 @@
         </article>
 
         <article class="card product reveal" data-cat="mousse">
-          <figure class="photo tint-butter" data-label="mousse-cake.jpg"><img src="mousse-cake.jpg" alt="French entremet mousse cake" /></figure>
+          <figure class="photo fit tint-butter" data-label="mousse-cake.jpg"><img loading="lazy" decoding="async" src="mousse-cake.jpg" alt="French entremet mousse cake" /></figure>
           <div class="card-body">
             <span class="tag">Signature</span>
             <h3>French mousse cake</h3>
@@ -114,7 +123,7 @@
         </article>
 
         <article class="card product reveal" data-cat="celebration">
-          <figure class="photo tint-butter" data-label="honey-cake.jpg"><img src="honey-cake.jpg" alt="Honey cake" /></figure>
+          <figure class="photo fit tint-butter" data-label="honey-cake.jpg"><img loading="lazy" decoding="async" src="honey-cake.jpg" alt="Honey cake" /></figure>
           <div class="card-body">
             <span class="tag">Classic</span>
             <h3>Honey cake</h3>
@@ -124,7 +133,7 @@
         </article>
 
         <article class="card product reveal" data-cat="celebration">
-          <figure class="photo tint-berry" data-label="cheesecake.jpg"><img src="cheesecake.jpg" alt="Berry cheesecake" /></figure>
+          <figure class="photo fit tint-berry" data-label="cheesecake.jpg"><img loading="lazy" decoding="async" src="cheesecake.jpg" alt="Berry cheesecake" /></figure>
           <div class="card-body">
             <h3>Cheesecake</h3>
             <p>A creamy baked cheesecake on a buttery base, topped with seasonal berries.</p>
@@ -133,7 +142,7 @@
         </article>
 
         <article class="card product reveal" data-cat="celebration">
-          <figure class="photo tint-pistachio" data-label="vintage-cake.jpg"><img src="vintage-cake.jpg" alt="Vintage piped birthday cake" /></figure>
+          <figure class="photo fit tint-pistachio" data-label="vintage-cake.jpg"><img loading="lazy" decoding="async" src="vintage-cake.jpg" alt="Vintage piped birthday cake" /></figure>
           <div class="card-body">
             <span class="tag">Trending</span>
             <h3>Vintage birthday cake</h3>
@@ -143,7 +152,7 @@
         </article>
 
         <article class="card product reveal" data-cat="celebration">
-          <figure class="photo tint-lilac" data-label="3d-cake.jpg"><img src="3d-cake.jpg" alt="3D sculpted cake" /></figure>
+          <figure class="photo fit tint-lilac" data-label="3d-cake.jpg"><img loading="lazy" decoding="async" src="3d-cake.jpg" alt="3D sculpted cake" /></figure>
           <div class="card-body">
             <h3>3D &amp; character cakes</h3>
             <p>Sculpted cakes and figurines for kids' parties and themed celebrations.</p>
@@ -152,7 +161,7 @@
         </article>
 
         <article class="card product reveal" data-cat="treats">
-          <figure class="photo tint-pink" data-label="cake-pops.jpg"><img src="cake-pops.jpg" alt="Cake pops collection" /></figure>
+          <figure class="photo fit tint-pink" data-label="cake-pops.jpg"><img loading="lazy" decoding="async" src="cake-pops.jpg" alt="Cake pops collection" /></figure>
           <div class="card-body">
             <span class="tag">New</span>
             <h3>Cake pops collection</h3>
@@ -162,7 +171,7 @@
         </article>
 
         <article class="card product reveal" data-cat="treats">
-          <figure class="photo tint-sky" data-label="nuts.jpg"><img src="nuts.jpg" alt="Nuts biscuits in pastel colours" /></figure>
+          <figure class="photo fit tint-sky" data-label="nuts.jpg"><img loading="lazy" decoding="async" src="nuts.jpg" alt="Nuts biscuits in pastel colours" /></figure>
           <div class="card-body">
             <h3>“Nuts” biscuits</h3>
             <p>Nostalgic walnut-shaped biscuits with a caramel filling, made in pastel colours and boxed as gifts.</p>
@@ -171,7 +180,7 @@
         </article>
 
         <article class="card product reveal" data-cat="treats">
-          <figure class="photo tint-lilac" data-label="candy-bar.jpg"><img src="candy-bar.jpg" alt="Dessert candy bar" /></figure>
+          <figure class="photo fit tint-lilac" data-label="candy-bar.jpg"><img loading="lazy" decoding="async" src="candy-bar.jpg" alt="Dessert candy bar" /></figure>
           <div class="card-body">
             <h3>Candy bar</h3>
             <p>A coordinated dessert table of mini cakes, cake pops and treats styled for your event.</p>
@@ -185,11 +194,11 @@
     <section class="section about" id="about">
       <div class="about-inner">
         <!-- Tip: replace about.jpg with a photo of Eleni at work -->
-        <figure class="photo about-photo reveal" data-label="about.jpg">
-          <img src="about.jpg" alt="Vintage piped cake by Eleni Pourpourides" />
+        <figure class="photo fit about-photo reveal" data-label="about.jpg">
+          <img loading="lazy" decoding="async" src="about.jpg" alt="Vintage piped cake by Eleni Pourpourides" />
         </figure>
         <div class="about-copy reveal">
-          <p class="script">Meet the chef</p>
+          <p class="eyebrow">Meet the chef</p>
           <h2>Hi, I'm Eleni</h2>
           <p>I'm a Ukrainian pastry chef living in Nicosia. I fell in love with French patisserie: its textures, its balance and its attention to every detail. Now I bring that to Cyprus, together with the cakes I grew up with.</p>
           <p>Every order is made by me, from start to finish, in small batches. I use real butter, fine chocolate and fresh fruit, and no shortcuts. I'd love to make your celebration a little sweeter.</p>
@@ -206,27 +215,27 @@
     <!-- ============ OCCASIONS ============ -->
     <section class="section" id="occasions">
       <div class="section-head reveal">
-        <p class="script">For every celebration</p>
+        <p class="eyebrow">For every celebration</p>
         <h2>Occasions</h2>
       </div>
       <div class="grid occasions">
         <article class="occ occ-pink reveal">
-          <span class="occ-num">/01</span>
+          <span class="occ-num">I</span>
           <h3>Weddings</h3>
           <p>Tiered wedding cakes and dessert tables, designed to match your theme and colour palette.</p>
         </article>
         <article class="occ occ-butter reveal">
-          <span class="occ-num">/02</span>
+          <span class="occ-num">II</span>
           <h3>Birthdays</h3>
           <p>From bento cakes for two to show-stopping character cakes for little ones.</p>
         </article>
         <article class="occ occ-pistachio reveal">
-          <span class="occ-num">/03</span>
+          <span class="occ-num">III</span>
           <h3>Corporate gifts</h3>
           <p>Branded treat boxes, cake pops and biscuits for clients and teams.</p>
         </article>
         <article class="occ occ-lilac reveal">
-          <span class="occ-num">/04</span>
+          <span class="occ-num">IV</span>
           <h3>Christmas &amp; Easter</h3>
           <p>Limited seasonal collections. Follow along on Instagram so you don't miss them.</p>
         </article>
@@ -236,7 +245,7 @@
     <!-- ============ HOW TO ORDER ============ -->
     <section class="section steps-section" id="order">
       <div class="section-head reveal">
-        <p class="script">Simple &amp; personal</p>
+        <p class="eyebrow">Simple &amp; personal</p>
         <h2>How to order</h2>
       </div>
       <ol class="steps">
@@ -250,15 +259,15 @@
     <!-- ============ GALLERY ============ -->
     <section class="section gallery-section">
       <div class="section-head reveal">
-        <p class="script">Fresh from the kitchen</p>
+        <p class="eyebrow">Fresh from the kitchen</p>
         <h2>Recent creations</h2>
       </div>
       <div class="gallery">
-        <figure class="photo g1 tint-pink reveal" data-label="gallery-1.jpg"><img src="gallery-1.jpg" alt="Recent creation" /></figure>
-        <figure class="photo g2 tint-butter reveal" data-label="gallery-2.jpg"><img src="gallery-2.jpg" alt="Recent creation" /></figure>
-        <figure class="photo g3 tint-berry reveal" data-label="gallery-3.jpg"><img src="gallery-3.jpg" alt="Recent creation" /></figure>
-        <figure class="photo g4 tint-sky reveal" data-label="gallery-4.jpg"><img src="gallery-4.jpg" alt="Recent creation" /></figure>
-        <figure class="photo g5 tint-pistachio reveal" data-label="gallery-5.jpg"><img src="gallery-5.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit g1 tint-pink reveal" data-label="gallery-1.jpg"><img loading="lazy" decoding="async" src="gallery-1.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit g2 tint-butter reveal" data-label="gallery-2.jpg"><img loading="lazy" decoding="async" src="gallery-2.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit g3 tint-berry reveal" data-label="gallery-3.jpg"><img loading="lazy" decoding="async" src="gallery-3.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit g4 tint-sky reveal" data-label="gallery-4.jpg"><img loading="lazy" decoding="async" src="gallery-4.jpg" alt="Recent creation" /></figure>
+        <figure class="photo fit g5 tint-pistachio reveal" data-label="gallery-5.jpg"><img loading="lazy" decoding="async" src="gallery-5.jpg" alt="Recent creation" /></figure>
       </div>
       <div class="center reveal">
         <a class="btn btn-ghost" href="https://www.instagram.com/epourpourides.bakery/" target="_blank" rel="noopener">More on Instagram @epourpourides.bakery</a>
@@ -268,7 +277,7 @@
     <!-- ============ REVIEWS ============ -->
     <section class="section reviews" id="reviews">
       <div class="section-head reveal">
-        <p class="script">Kind words</p>
+        <p class="eyebrow">Kind words</p>
         <h2>Reviews</h2>
       </div>
 
@@ -293,7 +302,7 @@
     <!-- ============ FAQ ============ -->
     <section class="section faq-section" id="faq">
       <div class="section-head reveal">
-        <p class="script">Good to know</p>
+        <p class="eyebrow">Good to know</p>
         <h2>Questions</h2>
       </div>
       <div class="faq">
@@ -309,7 +318,7 @@
     <!-- ============ CTA ============ -->
     <section class="cta reveal">
       <div class="signature-bg small" aria-hidden="true">Pourpourides</div>
-      <p class="script">Let's create something sweet</p>
+      <p class="eyebrow">Something sweet awaits</p>
       <h2>Ready to order<br>your cake?</h2>
       <div class="hero-actions center">
         <a class="btn btn-primary" data-wa="Hi Eleni! I'd like to order a cake 🎂" href="#">Message on WhatsApp <span class="arrow">→</span></a>

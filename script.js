@@ -14,10 +14,16 @@ document.getElementById("facebookLink").href = FACEBOOK_URL;
 document.getElementById("year").textContent = new Date().getFullYear();
 
 /* ---------- Photo placeholders when an image file is missing ---------- */
+/* Only an image that truly failed gets the placeholder. Safari can briefly report
+   "complete" with no size while a photo is still downloading, so a successful
+   load always removes the placeholder again. */
 document.querySelectorAll(".photo img").forEach((img) => {
-  const mark = () => img.closest(".photo").classList.add("ph");
-  if (img.complete && img.naturalWidth === 0) mark();
-  img.addEventListener("error", mark);
+  const box = img.closest(".photo");
+  // Whole-cake frames use a soft blurred copy of the same photo as their background
+  if (box.classList.contains("fit")) box.style.setProperty("--src", `url("${img.getAttribute("src")}")`);
+  img.addEventListener("error", () => box.classList.add("ph"));
+  img.addEventListener("load", () => box.classList.remove("ph"));
+  if (img.complete && img.naturalWidth > 0) box.classList.remove("ph");
 });
 
 /* ---------- Nav: background on scroll + mobile menu ---------- */
@@ -44,7 +50,10 @@ const products = document.querySelectorAll(".product");
 const productList = document.querySelector(".products");
 chips.forEach((chip) =>
   chip.addEventListener("click", () => {
-    chips.forEach((c) => c.classList.toggle("active", c === chip));
+    chips.forEach((c) => {
+      c.classList.toggle("active", c === chip);
+      c.setAttribute("aria-pressed", c === chip);
+    });
     const f = chip.dataset.filter;
     products.forEach((p) => {
       const show = f === "all" || p.dataset.cat === f;
