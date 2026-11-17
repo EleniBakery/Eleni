@@ -556,9 +556,9 @@ main, .footer { position: relative; z-index: 1; }
 
 /* ---------- Hero portrait (v2): full photo, rectangular frame ---------- */
 .hero-visual { height: auto; display: flex; justify-content: center; align-items: center; }
-.portrait-wrap { position: relative; width: min(100%, 470px); padding: 22px 34px 40px 22px; }
+.portrait-wrap { position: relative; width: min(100%, 470px); padding: 22px 34px 22px 22px; }
 .portrait-wrap::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 12px; bottom: 18px;
+  content: ""; position: absolute; top: 0; left: 0; right: 12px; bottom: 0;
   border: 1px solid var(--gold-soft); border-radius: 4px; pointer-events: none;
 }
 .hero-visual .hero-portrait {
@@ -586,8 +586,8 @@ main, .footer { position: relative; z-index: 1; }
   .portrait-wrap { width: min(100%, 420px); }
 }
 @media (max-width: 700px) {
-  .portrait-wrap { padding: 16px 22px 34px 14px; }
-  .portrait-wrap::before { right: 8px; bottom: 14px; }
+  .portrait-wrap { padding: 16px 22px 16px 14px; }
+  .portrait-wrap::before { right: 8px; bottom: 0; }
   .nameplate { padding: 12px 18px 10px; }
   .nameplate-name { font-size: 20px; }
   .nameplate-role { font-size: 10px; }
