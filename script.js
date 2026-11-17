@@ -1,7 +1,7 @@
 /* =========================================================
    SETTINGS: change these to Eleni's real details
    ========================================================= */
-const WHATSAPP_NUMBER = "35700000000"; // country code + number, digits only (e.g. 35799123456)
+const WHATSAPP_NUMBER = "35799753205"; // country code + number, digits only (e.g. 35799123456)
 const FACEBOOK_URL = "https://www.facebook.com/EPourpourudes"; // her Facebook page link
 
 /* ---------- WhatsApp links with pre-filled messages ---------- */
